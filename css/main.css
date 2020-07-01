@@ -1,98 +1,175 @@
 :root {
-    --primary-color:#5B25F5;
+    --primary-color: #5B25F5;
+    --secondary-color: #bab4e2;
     --background-color: #F5F5FD;
     --background-color-hover: #e5e5ec;
 }
+
 body {
     margin: 0;
-    min-width: 0px;
+    min-width: 240px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
     background-color: var(--background-color);
 }
 
-.sidebar {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.navbar {
     width: 12em;
     background-color: #fff;
     position: fixed;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.sidebar a {
-  display: flex;
-  color: var(--primary-color);
-  padding: 1em;
-  text-decoration: none;
-  align-items: center;
-  cursor: pointer;
+.navbar-brand {
+    padding: 1.5em 0em 2em 1em;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--secondary-color);
 }
-  .sidebar a:not(.active):hover {
+
+.navbar-brand .icon-container {
+    width: 2em;
+    height: 2em;
+    border-radius: 0.8em;
+    padding: 0.5em;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar-brand .icon {
+    width: 2em;
+    height: 2em;
+    background-color: #fff;
+}
+
+.navbar-brand .icon.hexagon {
+    -webkit-mask: url(../icon/hexagon.svg) no-repeat center;
+    mask: url(../icon/hexagon.svg) no-repeat center;
+}
+
+.navbar-brand .name {
+    padding-top: 0.5em;
+}
+
+ul.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-nav a {
+    display: flex;
+    color: var(--secondary-color);
+    padding: 1em;
+    text-decoration: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar-nav a.active {
+    color: var(--primary-color)
+}
+
+.navbar-nav a:not(.active):hover {
     background-color: var(--background-color-hover);
-  }
+}
 
-  .sidebar img {
-      margin-right: .5em;
-  }
-
-  .sidebar .icon {
+.navbar-nav .active .icon {
     background-color: var(--primary-color);
     width: 2em;
     height: 2em;
-  }
+}
 
-  /* Bottombar icons */
+.navbar-nav .icon {
+    background-color: var(--secondary-color);
+    width: 2em;
+    height: 2em;
+}
 
-  .sidebar .icon.home {
+.navbar-nav img {
+    margin-right: .5em;
+}
+
+
+/* Bottombar icons */
+
+.navbar-nav .icon.home {
     -webkit-mask: url(../icon/home.svg) no-repeat center;
     mask: url(../icon/home.svg) no-repeat center;
-  }  
-  .sidebar .icon.statistics {
+}
+
+.navbar-nav .icon.statistics {
     -webkit-mask: url(../icon/bar-chart-2.svg) no-repeat center;
     mask: url(../icon/bar-chart-2.svg) no-repeat center;
-  }
-  .sidebar .icon.mail {
+}
+
+.navbar-nav .icon.mail {
     -webkit-mask: url(../icon/mail.svg) no-repeat center;
     mask: url(../icon/mail.svg) no-repeat center;
-  }
-  .sidebar .icon.user {
+}
+
+.navbar-nav .icon.user {
     -webkit-mask: url(../icon/user.svg) no-repeat center;
     mask: url(../icon/user.svg) no-repeat center;
-  }
-  .sidebar .icon.file {
+}
+
+.navbar-nav .icon.file {
     -webkit-mask: url(../icon/file.svg) no-repeat center;
     mask: url(../icon/file.svg) no-repeat center;
-  }
+}
 
-  @media screen and (max-width: 768px) { /* Tablet */
-    .sidebar {
-      width: 100%;
-      height: auto;
-      display: flex;
-      justify-content: space-around;
+@media screen and (max-width: 500px) {
+    /* Tablet (768px) */
+    .navbar {
+        bottom: 0;
+        width: 100%;
+        height: auto;
     }
-    .sidebar a {
+    .navbar-brand {
+        display: none;
+    }
+    .navbar-nav {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: space-around;
+    }
+    .navbar-nav a {
         float: left;
         font-size: 0.8em;
         padding: 1em 0.5em;
     }
-    .sidebar .icon {
+    .navbar-nav .icon {
         width: 2em;
         height: 2em;
-      }
-  }
-  
-  @media screen and (max-width: 500px) { /* Phone: 425px */
-    .sidebar {
-        position: fixed;
+    }
+    .navbar-nav img {
+        margin-right: .5em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* Phone (Large)*/
+    .navbar-nav {
+        position: relative;
         bottom: 0;
         display: flex;
         justify-content: space-around;
     }
+    .navbar-nav a {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
-    .sidebar span {
+@media screen and (max-width: 320px) {
+    /* Phone (Small) */
+    .navbar-nav span {
         display: none;
     }
-  }
+}
