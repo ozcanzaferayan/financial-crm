@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/charts.css" />
 </head>
 
 <body>
@@ -33,7 +35,80 @@
                 <a><img class="icon file" /><span>Documents</span></a>
             </li>
         </ul>
+        <div class="navbar-footer">
+            <img class="image-documents" src="./img/documents.svg" alt="documents" />
+            <div class="container">
+                <h2>PDF Report</h2>
+                <span>Annual detailed report</span>
+                <a href="#" download>Download</a>
+            </div>
+        </div>
     </nav>
+    <main>
+        <header>
+            <section role="search">
+                <form action="#" method="get">
+                    <div class="form-inline">
+                        <img class="icon search" />
+                        <input type="search" placeholder="Search" />
+                    </div>
+                </form>
+            </section>
+
+            <section role="application">
+                <button class="change-view">
+                    <img class="icon layout" />Change view
+                </button>
+                <button class="notification">
+                    <img class="icon notification" />
+                </button>
+                <button class="menu">
+                    <img class="icon menu" />
+                </button>
+            </section>
+        </header>
+        <h1>Overview</h1>
+        <div class="charts-wrapper">
+            <section role="credit-card">
+                <div class="top">
+                    <img src="./img/mastercard.svg" />
+                    <img src="./img/apple_pay.svg" class="apple_pay" />
+                </div>
+                <div class="ccNumber">
+                    <span>˙˙˙˙ ˙˙˙˙ ˙˙˙˙ 5610</span>
+                </div>
+                <div class="ccBottom">
+                    <div class="ccValidThru">
+                        <label>VALID THRU</label>
+                        <span>05/21</span>
+                    </div>
+                    <div class="ccCardHolder">
+                        <label>CARD HOLDER</label>
+                        <span>Robert</span>
+                    </div>
+                </div>
+            </section>
+            <section role="chart" class="exchange-rates">
+                <h3 class="title">Exchange rates</h3>
+                <canvas id="exchangeRates"></canvas>
+            </section>
+            <section role="chart" class="last-costs">
+                <h3 class="title">Last Costs</h3>
+                <canvas id="last_costs"></canvas>
+
+            </section>
+            <section role="chart" class="efficiency">
+                <h3 class="title">Efficiency</h3>
+                <canvas id="efficiency"></canvas>
+
+            </section>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="./vendor/chartjs/Chart.roundedBarCharts.js"></script>
+    <script src="./js/exchange_rates.js"></script>
+    <script src="./js/last_costs.js"></script>
+    <script src="./js/efficiency.js"></script>
 </body>
 
 </html>

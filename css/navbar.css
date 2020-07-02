@@ -1,29 +1,39 @@
 :root {
     --primary-color: #5B25F5;
-    --secondary-color: #bab4e2;
+    --secondary-color: #9792c7;
+    --secondary-color-with-opacity: #bab4e21f;
     --background-color: #F5F5FD;
     --background-color-hover: #e5e5ec;
+    --text: #9792c7;
+    --white: #fff;
+    --black: #000;
 }
 
 body {
     margin: 0;
-    min-width: 240px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
-    background-color: var(--background-color);
+    background-color: var(--white);
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    flex: 1;
 }
 
 .navbar {
-    width: 12em;
     background-color: #fff;
-    position: fixed;
     height: 100%;
     display: flex;
+    position: fixed;
     flex-direction: column;
+    padding: 1.563em;
+    font-weight: 600;
+    width: 18.75em;
+    box-sizing: border-box;
+    justify-content: space-between;
 }
 
 .navbar-brand {
-    padding: 1.5em 0em 2em 1em;
+    padding: 2.188em 0em 2em 1em;
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -85,7 +95,7 @@ ul.navbar-nav {
     height: 2em;
 }
 
-.navbar-nav .icon {
+.icon {
     background-color: var(--secondary-color);
     width: 2em;
     height: 2em;
@@ -123,12 +133,57 @@ ul.navbar-nav {
     mask: url(../icon/file.svg) no-repeat center;
 }
 
-@media screen and (max-width: 500px) {
+.navbar-footer .image-documents {
+    width: 100%;
+    margin-bottom: -8em;
+    position: relative;
+    z-index: 1
+}
+
+.navbar-footer .container {
+    background-color: var(--background-color);
+    margin: .5em;
+    padding: 1.688em;
+    padding-top: 6em;
+    display: flex;
+    flex-direction: column;
+    font-weight: normal;
+    border-radius: 1.3em;
+    position: relative;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.navbar-footer h2 {
+    margin-bottom: 0.25em;
+    color: var(--black);
+}
+
+.navbar-footer span {
+    color: var(--text);
+    font-size: .8em;
+}
+
+.navbar-footer a {
+    color: var(--white);
+    background-color: var(--primary-color);
+    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+    border-radius: 1.3em;
+    margin-top: 1em;
+}
+
+@media screen and (max-width: 768px) {
     /* Tablet (768px) */
     .navbar {
         bottom: 0;
         width: 100%;
         height: auto;
+        padding: 0.1em;
+        position: fixed;
+        margin: 0;
+        border-top: 1px solid var(--background-color);
     }
     .navbar-brand {
         display: none;
@@ -150,6 +205,9 @@ ul.navbar-nav {
     }
     .navbar-nav img {
         margin-right: .5em;
+    }
+    .navbar-footer {
+        display: none;
     }
 }
 

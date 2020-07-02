@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="199.93932"
+   height="123.61814"
+   version="1.1"
+   id="svg26"
+   sodipodi:docname="mastercard.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <defs
+     id="defs30" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview28"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="2.1452269"
+     inkscape:cx="12.746582"
+     inkscape:cy="39.394237"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg26" />
+  <metadata
+     id="metadata2">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     d="M 127.00548,110.41067 H 72.927553 V 13.223188 h 54.077927 z"
+     id="path12"
+     inkscape:connector-curvature="0"
+     style="fill:#865ef4;stroke-width:3.14369988;fill-opacity:1" />
+  <g
+     transform="matrix(3.929625,0,0,-3.929625,76.39191,61.809072)"
+     id="g16"
+     style="fill:#774bf6;fill-opacity:1">
+    <path
+       d="m 0,0 c 0,5.017 2.349,9.486 6.007,12.366 -2.675,2.106 -6.051,3.363 -9.72,3.363 -8.686,0 -15.727,-7.042 -15.727,-15.729 0,-8.687 7.041,-15.729 15.727,-15.729 3.669,0 7.045,1.257 9.72,3.363 C 2.349,-9.486 0,-5.017 0,0"
+       id="path14"
+       inkscape:connector-curvature="0"
+       style="fill:#774bf6;fill-opacity:1" />
+  </g>
+  <g
+     transform="matrix(3.929625,0,0,-3.929625,199.93932,61.809072)"
+     id="g20"
+     style="fill:#774bf6;fill-opacity:1">
+    <path
+       d="m 0,0 c 0,-8.687 -7.041,-15.729 -15.727,-15.729 -3.669,0 -7.045,1.257 -9.721,3.363 3.659,2.88 6.008,7.349 6.008,12.366 0,5.017 -2.349,9.486 -6.008,12.366 2.676,2.106 6.052,3.363 9.721,3.363 C -7.041,15.729 0,8.687 0,0"
+       id="path18"
+       inkscape:connector-curvature="0"
+       style="fill:#774bf6;fill-opacity:1" />
+  </g>
+</svg>

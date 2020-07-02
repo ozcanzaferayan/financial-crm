@@ -1,0 +1,169 @@
+.charts-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main section[role="credit-card"] {
+    width: 310px;
+    height: 210px;
+    background-color: var(--primary-color);
+    border-radius: 2em;
+    position: relative;
+    margin-left: -4em;
+    margin-bottom: 1em;
+    padding: 2em;
+    box-sizing: border-box;
+    -webkit-box-shadow: 10px 10px 46px -6px rgba(104, 87, 150, 1);
+    -moz-box-shadow: 10px 10px 46px -6px rgba(104, 87, 150, 1);
+    box-shadow: 10px 10px 46px -6px rgba(104, 87, 150, 1);
+}
+
+main section[role="credit-card"] img {
+    width: 4em;
+}
+
+main section[role="credit-card"] img.apple_pay {
+    width: 3em;
+}
+
+main section[role="credit-card"] .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+main section[role="credit-card"] .ccNumber {
+    margin-top: 1.3em;
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+
+.ccBottom {
+    margin-top: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+}
+
+.ccValidThru,
+.ccCardHolder {
+    display: flex;
+    flex-direction: column;
+}
+
+.ccCardHolder {
+    margin-right: 1em;
+}
+
+.ccBottom label {
+    opacity: .5;
+    font-size: .7em;
+}
+
+main section[role="chart"] {
+    width: 100%;
+    margin-left: 1em;
+    height: 18em;
+    background-color: var(--white);
+    border-radius: 2em;
+    margin-bottom: 1em;
+    padding: 2em;
+    padding-bottom: 5em;
+    box-sizing: border-box;
+}
+
+section[role="chart"] .title {
+    color: var(--black);
+    font-weight: 700;
+    margin-top: 0;
+}
+
+main section[role="chart"].exchange-rates {
+    width: calc(100% - 270px);
+}
+
+main section[role="chart"].last-costs {
+    width: calc(100% - 350px);
+}
+
+main section[role="chart"].efficiency {
+    width: 310px;
+}
+
+@media screen and (max-width: 1024px) {
+    /* Laptop (1024px) */
+    main section[role="chart"].efficiency {
+        width: 170px;
+    }
+    main section[role="chart"].last-costs {
+        width: calc(100% - 210px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Tablet (768px) */
+    main section[role="credit-card"] {
+        margin-left: 0;
+    }
+    .charts-wrapper {
+        flex-direction: column;
+    }
+    main section[role="chart"].exchange-rates,
+    main section[role="chart"].last-costs,
+    main section[role="chart"].efficiency {
+        margin-left: 0;
+        width: 100%;
+        padding: 2em;
+        border-radius: 0;
+        padding-bottom: 5em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    main section[role="chart"].exchange-rates,
+    main section[role="chart"].last-costs,
+    main section[role="chart"].efficiency {
+        padding: 0.5em;
+        padding-bottom: 3em;
+    }
+    main section[role="chart"].efficiency {
+        margin-bottom: 5em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* Phone (Small) */
+    main section[role="credit-card"] {
+        width: 100%;
+        padding: 0.75em;
+        margin-bottom: 0.75em;
+        border-radius: 0;
+        height: initial;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+    main section[role="credit-card"] img {
+        width: 2em;
+    }
+    main section[role="credit-card"] img.apple_pay {
+        width: 2em;
+    }
+    main section[role="credit-card"] .ccNumber {
+        margin-top: 0.7em;
+    }
+    .ccBottom {
+        margin-top: 0.7em;
+    }
+    section[role="chart"] .title {
+        margin-bottom: 0.2em;
+    }
+    main section[role="chart"].exchange-rates,
+    main section[role="chart"].last-costs,
+    main section[role="chart"].efficiency {
+        height: 12em;
+    }
+}
