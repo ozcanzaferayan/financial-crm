@@ -33,6 +33,7 @@ main header input[type="search"] {
     font-size: 0.9rem;
     font-weight: 500;
     width: 100%;
+    -webkit-appearance: none;
 }
 
 main header button {

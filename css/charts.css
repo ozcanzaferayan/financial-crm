@@ -21,6 +21,7 @@ main section[role="credit-card"] {
 
 main section[role="credit-card"] img {
     width: 4em;
+    height: 100%;
 }
 
 main section[role="credit-card"] img.apple_pay {
